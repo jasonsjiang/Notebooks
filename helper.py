@@ -21,3 +21,4 @@ def show_sk_topics(model, feature_names, n_top_words):
         words = np.argsort(topic)[::-1][:n_top_words]
         print('Topic ' + str(num_topic) + ':')
         print(' '.join([feature_names[i] for i in words]))
+        print()
